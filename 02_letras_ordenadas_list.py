@@ -22,7 +22,7 @@ for ingreso in range(cantidad_letras):
     letra: str = ""
 
     while letra == "":
-        letra: str = input(f"Ingrese letra #{ingreso + 1}: ").upper()
+        letra: str = input(f"Ingrese letra {ingreso + 1} de {cantidad_letras}: ").upper()
 
         if not letra_valida.match(letra):
             print("Valor no admitido")
